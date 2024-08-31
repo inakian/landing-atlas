@@ -1,3 +1,15 @@
+// toggler del nav
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      navLinks.forEach((nav) => nav.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+});
+
 // Animaciones para la sección hero
 gsap.from(".hero h1", {
   opacity: 0,
