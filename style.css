@@ -1,0 +1,237 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/background-hero.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero figcaption {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+}
+
+.hero-images img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-images img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    text-align: center;
+  }
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilos para la sección de servicios */
+.services-section {
+  padding: 60px 0;
+  background-color: #4a90e2; /* Fondo a color similar al de la sección de nosotros */
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 30px;
+}
+
+.services-section .service {
+  background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Para que las imágenes no se salgan del contenedor */
+}
+
+.services-section .service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.services-section .service img {
+  width: 100%;
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Para que las imágenes se ajusten al contenedor */
+}
+
+.services-section .service .content {
+  padding: 20px;
+}
+
+.services-section .service h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.services-section .service p {
+  color: #666;
+}
+
+.services-section .btn {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.services-section .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la sección de nosotros */
+.about-section {
+  position: relative;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.about-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  z-index: 1;
+}
+
+.about-section .content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.contact-section .form-control,
+.contact-section .btn {
+  border-radius: 5px;
+}
+
+.contact-section .btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.contact-section .btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+/* Estilos para la sección de testimonios */
+.testimonials-section {
+  padding: 60px 0;
+  background-color: #4a90e2; /* Fondo a color similar al de la sección de nosotros */
+  color: #fff;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  padding: 30px;
+}
+
+.testimonials-section .testimonial {
+  background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials-section .testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-section .testimonial img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonials-section .testimonial h5 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.testimonials-section .testimonial p {
+  font-size: 1rem;
+}
+
+#por-que-elegirnos {
+  background-color: #8ab3dc;
+  padding: 60px 0;
+}
+
+#por-que-elegirnos .card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+#por-que-elegirnos .card:hover {
+  transform: translateY(-10px);
+}
+
+#por-que-elegirnos .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#por-que-elegirnos .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  #contacto {
+    padding: 20px 10px;
+  }
+
+  #contacto .container {
+    padding: 0;
+  }
+
+  #contacto .form-control {
+    width: 100%;
+  }
+
+  #contacto .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
