@@ -103,6 +103,11 @@ h2 {
   background-color: #0056b3;
 }
 
+.btn-info {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 /* Estilos para la sección de nosotros */
 .about-section {
   position: relative;
